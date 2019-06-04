@@ -1,14 +1,41 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:FinalXamarin6"
              x:Class="FinalXamarin6.MainPage">
 
-    <StackLayout>
+    <StackLayout Padding="20,30,20,10">
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Label Text="Proyecto Final" 
+               HorizontalOptions="Center"
+               FontSize="32"
+               FontAttributes="Bold"
+               Margin="0,0,0,120"/>
+
+        <Label Text="Introduzca los datos requeridos" 
+               HorizontalOptions="Center" 
+               FontSize="16"
+               Margin="0,0,0,10"/>
+
+        <StackLayout Padding="5,5,5,5" 
+                     HorizontalOptions="FillAndExpand" 
+                     VerticalOptions="Center"
+                     Margin="0,0,0,2">
+            <Entry HorizontalOptions="FillAndExpand"
+               Placeholder="Usuario"
+               x:Name="txtUsername"
+                   Margin="0,0,0,5"/>
+
+            <Entry HorizontalOptions="FillAndExpand"
+               Placeholder="Contraseña"
+               x:Name="txtPassword" />
+        </StackLayout>
+
+        <Button HorizontalOptions="Center" 
+                Text="Acceder"
+                x:Name="btnLogin"
+                Clicked="BtnLogin_Clicked"/>
+
     </StackLayout>
 
 </ContentPage>
