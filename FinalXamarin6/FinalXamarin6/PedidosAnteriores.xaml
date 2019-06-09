@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalXamarin6.PedidosAnteriores">
+    <ContentPage.Content>
+        <StackLayout Padding="20,30,20,20">
+            <Label Text="Pedidos Anteriores"
+                HorizontalOptions="CenterAndExpand"
+                   FontSize="30"
+                   Margin="0,0,0,20"/>
+
+            <StackLayout Orientation="Horizontal" Padding="20,0,20,0">
+                <Label Text="Buscar pedido"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Start"
+                       VerticalTextAlignment="Center"/>
+
+                <Entry x:Name="txtCriterio_Anterior"
+                       Placeholder="No. Pedido"
+                       HorizontalOptions="Start"
+                       WidthRequest="100"/>
+
+            </StackLayout>
+
+            <Button Text="Iniciar"
+                    HorizontalOptions="Center"
+                    x:Name="btnIniciarBusqueda_Anterior"
+                    Margin="0,0,0,10"
+                    Clicked="BtnIniciarBusqueda_Anterior_Clicked"/>
+
+            <Label Text="Resultado de busqueda"
+                   FontSize="16"
+                   HorizontalOptions="Start"/>
+            <ListView 
+                x:Name="lvResultados_Anterior"
+                HorizontalOptions="FillAndExpand"
+                Margin="0,0,0,0"/>
+
+            <Label Text="Pedidos Pendientes"
+                   FontSize="16"
+                   HorizontalOptions="Start"/>
+            <ListView 
+                x:Name="lvPendientes_Anterior"
+                HorizontalOptions="FillAndExpand" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
