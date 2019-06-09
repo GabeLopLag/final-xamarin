@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalXamarin6.FinalizarPedido">
+    <ContentPage.Content>
+        <StackLayout Padding="20,30,20,20">
+            <Label Text="Finalizar Pedido"
+                   HorizontalOptions="CenterAndExpand" 
+                   FontAttributes="Bold"
+                   FontSize="30"
+                   Margin="0,0,0,50"/>
+
+            <Label Text="Seleccione un pedido" FontSize="16" FontAttributes="Bold"/>
+            <StackLayout HorizontalOptions="FillAndExpand" 
+                         Orientation="Vertical"
+                         Padding="30,0,30,0"
+                         Margin="0,0,0,20">
+                <Picker x:Name="pkPedidos" 
+                        FontSize="16"
+                        HorizontalOptions="FillAndExpand"
+                        Title="Pedidos"/>
+            </StackLayout>
+
+            <Button HorizontalOptions="Center"
+                    Text="Finalizar"
+                    x:Name="btnFinalizar"
+                    Clicked="BtnFinalizar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalXamarin6.IniciarPedido">
+    <ContentPage.Content>
+        <StackLayout Padding="20,30,20,20">
+            <Label Text="Iniciar Pedido"
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="30.0" 
+                   Margin="0,0,0,20"/>
+
+            <StackLayout Padding="20,0,20,0" Margin="0,0,0,5" Orientation="Horizontal">
+                <Entry Placeholder="Nombre del cliente"
+                   HorizontalOptions="FillAndExpand" 
+                       x:Name="txtCliente"/>
+            </StackLayout>
+
+            <StackLayout Padding="20,0,20,0" Margin="0,0,0,5" Orientation="Horizontal">
+                <Editor Placeholder="Producto(s)"
+                        HorizontalOptions="FillAndExpand"
+                        HeightRequest="120"
+                        x:Name="txtProducto"/>
+            </StackLayout>
+
+            <StackLayout Padding="20,0,20,0" Margin="0,0,0,5" Orientation="Horizontal">
+                <Entry Placeholder="Importe Total"
+                   HorizontalOptions="FillAndExpand" 
+                       x:Name="txtImporteTotal"/>
+            </StackLayout>
+
+            <StackLayout Padding="20,0,20,0" Margin="0,0,0,20" Orientation="Horizontal">
+                <Editor Placeholder="Comentario"
+                        HorizontalOptions="FillAndExpand"
+                        HeightRequest="120"
+                        x:Name="txtComentario"/>
+            </StackLayout>
+
+            <StackLayout Padding="40,0,40,0" Margin="0,0,0,0" Orientation="Horizontal">
+                <Button Text="Enviar"
+                        HorizontalOptions="CenterAndExpand"
+                        x:Name="btnEnviar"
+                        Clicked="BtnEnviar_Clicked"/>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
