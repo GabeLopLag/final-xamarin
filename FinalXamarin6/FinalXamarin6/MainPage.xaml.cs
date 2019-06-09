@@ -33,7 +33,7 @@ namespace FinalXamarin6
             }
             catch(Exception ex)
             {
-
+                DisplayAlert("Error:", ex.Message, "Ok");
             }
             
         }
